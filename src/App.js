@@ -87,44 +87,55 @@
 //   )
 // }
 
+// import React from 'react'
+
+// const App = () => {
+//   return (
+//     <div>
+//       <Product name='Tesla' horsePower='Unknown'/>
+//       <ItemDesc typeOfCar='Electric Car' engine='No Engine' />
+//       <Price price={89999}/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+// const Product = ({name, horsePower}) => {
+//   return (
+//     <div>
+//       <h1>{name}</h1>
+//       <h2>{horsePower}</h2>
+//     </div>
+//   )
+// }
+
+// const ItemDesc = ({typeOfCar, engine}) => {
+//   return (
+//     <div>
+//       <p>{typeOfCar}</p>
+//       <p>{engine}</p>
+//     </div>
+//   )
+// }
+
+// const Price = ({price}) => {
+//   return (
+//     <div>
+//       ${price}
+//     </div>
+//   )
+// }
+
 import React from 'react'
 
 const App = () => {
   return (
     <div>
-      <Product name='Tesla' horsePower='Unknown'/>
-      <ItemDesc typeOfCar='Electric Car' engine='No Engine' />
-      <Price price={89999}/>
+      App
     </div>
   )
 }
 
 export default App
-
-
-const Product = ({name, horsePower}) => {
-  return (
-    <div>
-      <h1>{name}</h1>
-      <h2>{horsePower}</h2>
-    </div>
-  )
-}
-
-const ItemDesc = ({typeOfCar, engine}) => {
-  return (
-    <div>
-      <p>{typeOfCar}</p>
-      <p>{engine}</p>
-    </div>
-  )
-}
-
-const Price = ({price}) => {
-  return (
-    <div>
-      ${price}
-    </div>
-  )
-}
-
