@@ -129,11 +129,14 @@
 // }
 
 import React from 'react'
+import P1 from './screens/P1'
+import P2 from './screens/P2'
 
 const App = () => {
   return (
     <div>
-      App
+      <P1/>
+      <P2/>
     </div>
   )
 }
