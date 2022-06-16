@@ -102,28 +102,28 @@ const App = () => {
 export default App
 
 
-const Product = (props) => {
+const Product = ({name, horsePower}) => {
   return (
     <div>
-      <h1>{props.name}</h1>
-      <h2>{props.horsePower}</h2>
+      <h1>{name}</h1>
+      <h2>{horsePower}</h2>
     </div>
   )
 }
 
-const ItemDesc = (props) => {
+const ItemDesc = ({typeOfCar, engine}) => {
   return (
     <div>
-      <p>{props.typeOfCar}</p>
-      <p>{props.engine}</p>
+      <p>{typeOfCar}</p>
+      <p>{engine}</p>
     </div>
   )
 }
 
-const Price = (props) => {
+const Price = ({price}) => {
   return (
     <div>
-      ${props.price}
+      ${price}
     </div>
   )
 }
