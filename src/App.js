@@ -88,60 +88,43 @@
 // }
 
 import React from 'react'
-import { useState } from 'react'
 
-const App = ({}) => {
-
-  const [name, setName] = useState('');
-
+const App = () => {
   return (
-
     <div>
-      <P1 onClickFunction={() => setName('YO')}/>
-      <P2 name={name}/>
+      <Product name='Tesla' horsePower='Unknown'/>
+      <ItemDesc typeOfCar='Electric Car' engine='No Engine' />
+      <Price price={89999}/>
     </div>
   )
 }
 
 export default App
 
-const P1 = ({onClickFunction}) => {
+
+const Product = (props) => {
   return (
     <div>
-      <C1 onClickFunction={onClickFunction}/>
+      <h1>{props.name}</h1>
+      <h2>{props.horsePower}</h2>
     </div>
   )
 }
 
-
-const P2 = ({name}) => {
-  return (
-    <div> 
-      <C4 name={name}/>
-    </div>
-  )
-}
-
-
-const C1= ({onClickFunction}) => {
-  return (
-    <div onClick={() => onClickFunction()}>
-      c1
-    </div>
-  )
-}
-
-
-const C4= ({name}) => {
+const ItemDesc = (props) => {
   return (
     <div>
-      {(name)? name : 'Hey'}
+      <p>{props.typeOfCar}</p>
+      <p>{props.engine}</p>
     </div>
   )
 }
 
-
-
-
-
+const Price = (props) => {
+  return (
+    <div>
+      ${props.price}
+    </div>
+  )
+}
 
